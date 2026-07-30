@@ -1,0 +1,12 @@
+{
+  "name": "moontaxi-share",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public shared decks and assets, hosted at share.moontaxilab.com",
+  "type": "module",
+  "scripts": {
+    "sync:gtm": "cp '../../Presentations/2026-07-GTM-Symposium/index.html' public/gtm/index.html",
+    "dev": "npx vercel dev",
+    "deploy": "npx vercel deploy --prod"
+  }
+}
