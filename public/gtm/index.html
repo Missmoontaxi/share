@@ -65,6 +65,10 @@
     -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
     padding-right:.08em;
   }
+  .grad-warm{background:linear-gradient(100deg,var(--ink) 8%,var(--amber) 38%,var(--warm-hot) 78%);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-right:.08em}
+  .grad-cool{background:linear-gradient(100deg,var(--ink) 8%,#8fb0ff 45%,var(--cool) 85%);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-right:.08em}
   .sub{font-size:clamp(16px,1.6vw,21px);color:var(--muted);line-height:1.55;font-weight:300}
   .accent{color:var(--warm)}
   .dim{color:var(--faint)}
@@ -108,7 +112,7 @@
   .nametag .name span:nth-child(5){color:#9b59b6}
 
   /* word cloud */
-  .cloud{display:flex;flex-wrap:wrap;gap:1.2vw 2.6vw;align-items:baseline;margin:5vh 0;max-width:980px}
+  .cloud{display:flex;flex-wrap:wrap;gap:1.2vw 2.6vw;align-items:baseline;justify-content:center;text-align:center;margin:5vh auto;max-width:980px}
   .cloud span{color:var(--faint);font-weight:300;white-space:nowrap}
   .cloud .s1{font-size:clamp(14px,1.5vw,19px);opacity:.55}
   .cloud .s2{font-size:clamp(18px,2.2vw,28px);opacity:.75}
@@ -118,7 +122,7 @@
   /* three big words */
   .three{display:flex;flex-direction:column;gap:1vh;margin:4vh 0}
   .three div{font-size:clamp(44px,6.4vw,84px);font-weight:300;line-height:1.15}
-  .three .num{font-family:var(--mono);font-size:clamp(12px,1.1vw,14px);color:var(--faint);margin-right:24px;letter-spacing:.2em}
+  .three .num{font-family:var(--mono);font-size:clamp(12px,1.1vw,14px);color:var(--warm);margin-right:24px;letter-spacing:.2em}
 
   /* spectrum */
   .spectrum{margin:3vh 0 2vh;padding-top:74px}
@@ -249,7 +253,7 @@
   <section class="slide">
     <div class="inner">
       <div class="kicker">The problem</div>
-      <h1>&ldquo;GTM&rdquo; now means <span class="serif">everything that is not code.</span></h1>
+      <h1>&ldquo;GTM&rdquo; means <span class="serif">everything that is not code.</span></h1>
       <div class="cloud">
         <span class="s2">product marketing</span><span class="s1">SEO</span><span class="s3">content</span>
         <span class="s1">ABM</span><span class="s2">brand</span><span class="s1">performance</span>
@@ -266,7 +270,7 @@
   <section class="slide">
     <div class="inner">
       <div class="kicker">The bet</div>
-      <h1>Today, just three.</h1>
+      <h1>Today&rsquo;s focus</h1>
       <div class="three">
         <div><span class="num">01</span>Events</div>
         <div><span class="num">02</span>Community</div>
@@ -394,7 +398,7 @@
         <div class="block"><p class="lead">03 &middot; Instrument the motion.</p><p>Score events and communities the way you score ad channels.</p></div>
         <div class="block"><p class="lead">04 &middot; Build channels that compound.</p><p>Ambassadors, referrals, bundles, friends. Trust accrues like interest.</p></div>
         <div class="block"><p class="lead">05 &middot; Give before you ask.</p><p>Harvest tastefully. No grifting. Be transparent.</p></div>
-        <div class="block hot"><p class="lead">06 &middot; Get out and about.</p><p>See and be seen is not just important. For an early-stage founder it is existential.</p></div>
+        <div class="block hot"><p class="lead" style="color:var(--warm)">06 &middot; Get out and about.</p><p>See and be seen is not just important. For an early-stage founder it is existential.</p></div>
       </div>
     </div>
   </section>
@@ -403,7 +407,7 @@
   <section class="slide">
     <div class="inner" style="text-align:left">
       <div class="kicker">Thank you</div>
-      <div class="display" style="font-size:clamp(54px,8vw,110px)">Taste &amp; Trust.<br>Be Cool.</div>
+      <div class="display" style="font-size:clamp(54px,8vw,110px)"><span class="grad-warm">Taste &amp; Trust.</span><br><span class="grad-cool">Be Cool.</span></div>
       <div class="byline">
         <span>Paula McMahon</span>
         <span>paulamcmahon.com</span>
