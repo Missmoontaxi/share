@@ -4,7 +4,7 @@ Public home for slide decks and assets Paula shares on the open web. One folder 
 
 ## Current items
 
-- `/gtm` — "My Best" deck, PMAI GTM Symposium (July 2026). Source of truth: `Presentations/2026-07-GTM-Symposium/index.html`. Re-copy with `npm run sync:gtm` after editing the source, then deploy.
+- `/gtm` — "Taste & Trust" deck, PMAI GTM Symposium (July 2026). Source of truth: `Presentations/2026-07-GTM-Symposium/index.html`. Re-copy with `npm run sync:gtm` after editing the source, then deploy.
 
 ## Conventions
 
