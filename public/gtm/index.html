@@ -81,13 +81,13 @@
 
   .cols{display:grid;grid-template-columns:1.4fr 1fr;gap:6vw;align-items:center}
 
-  /* photo placeholder */
-  .photo-ph{
-    aspect-ratio:4/5;border:1px dashed var(--hairline);border-radius:6px;
-    display:flex;align-items:center;justify-content:center;text-align:center;
-    color:var(--faint);font-family:var(--mono);font-size:12px;letter-spacing:.12em;
-    line-height:2;padding:20px;
+  /* photo collage */
+  .collage{
+    aspect-ratio:4/5;display:grid;gap:6px;
+    grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(5,1fr);
+    border-radius:6px;overflow:hidden;
   }
+  .collage img{width:100%;height:100%;object-fit:cover;display:block;border-radius:3px}
 
   /* name tag */
   .nametag{
@@ -230,7 +230,17 @@
           <div class="block"><p><span class="accent">The AI Collective.</span> In service of founders and AI-curious as NYC chapter lead. 15+ events hosted, 25K to 250K members worldwide.</p></div>
           <div class="block hot"><p><span class="accent">Now: Eve.</span> Founding team, Partnerships &amp; Ecosystem.</p></div>
         </div>      </div>
-      <div class="photo-ph">PHOTO PLACEHOLDER<br>PAULA · CANDID, ON STAGE,<br>OR MID-SLICE</div>
+      <div class="collage">
+        <img src="assets/collage/p6.jpg" style="grid-area:1/1/2/3;object-position:50% 30%" alt="Paula speaking at an event">
+        <img src="assets/collage/p8.jpg" style="grid-area:1/3/3/4" alt="Paula in a podcast studio">
+        <img src="assets/collage/p1.jpg" style="grid-area:2/1/4/2" alt="Paula, studio portrait in denim">
+        <img src="assets/collage/p7.jpg" style="grid-area:2/2/3/3" alt="Paula speaking with a mic">
+        <img src="assets/collage/p3.jpg" style="grid-area:3/2/5/3" alt="Paula, headshot">
+        <img src="assets/collage/p4.jpg" style="grid-area:3/3/5/4;object-position:50% 12%" alt="Paula in yellow sunglasses">
+        <img src="assets/collage/p5.jpg" style="grid-area:4/1/5/2;object-position:40% 50%" alt="Paula, black and white portrait">
+        <img src="assets/collage/p9.jpg" style="grid-area:5/1/6/3;object-position:50% 40%" alt="Paula snowboarding">
+        <img src="assets/collage/p2.jpg" style="grid-area:5/3/6/4;object-position:50% 30%" alt="Paula, street selfie">
+      </div>
     </div>
   </section>
 
